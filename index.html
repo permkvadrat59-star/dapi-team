@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAPI Team — веб-дизайн, сайты и приложения</title>
+<meta name="description" content="DAPI Team — команда веб-дизайна и разработки. Создаём сайты и приложения от идеи до релиза.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="boot-screen" id="bootScreen">
+  <div class="boot-content">
+    <div class="boot-logo">DAPI TEAM</div>
+    <div class="boot-status">восстановление рабочей сессии<span class="dots"></span></div>
+    <div class="boot-bar"><div class="boot-bar-fill"></div></div>
+  </div>
+</div>
+
+<header class="menubar">
+  <div class="menubar-left">
+    <span class="menubar-logo">◆ DAPI</span>
+  </div>
+  <nav class="menubar-nav">
+    <a href="#about">О нас</a>
+    <a href="#works">Работы</a>
+    <a href="team.html">Команда</a>
+    <a href="#process">Процесс и цены</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="menubar-right">
+    <a href="https://t.me/dapiteam" target="_blank" rel="noopener" class="menubar-icon">TG</a>
+    <a href="https://instagram.com/dapi.team" target="_blank" rel="noopener" class="menubar-icon">IG</a>
+    <span class="menubar-clock" id="clock">00:00</span>
+  </div>
+</header>
+
+<main class="desktop" id="desktop">
+
+  <section class="hero" id="hero">
+    <div class="window hero-window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">dapi-team — Finder</span>
+      </div>
+      <img src="assets/images/hero.png" alt="Команда DAPI Team за работой: дизайн, деплой, баги и AI" class="hero-image">
+    </div>
+    <div class="hero-text">
+      <h1>DAPI TEAM</h1>
+      <p class="hero-status">статус: <span class="accent-green">доступны для новых задач</span></p>
+      <p class="hero-meta">4 участника · веб-дизайн · сайты · приложения</p>
+      <a href="#about" class="btn-primary">Открыть рабочий стол ↓</a>
+    </div>
+  </section>
+
+  <section class="window-section" id="about">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">о нас.txt</span>
+      </div>
+      <div class="window-body about-body">
+        <h2>О нас</h2>
+        <p class="lead">Мы — команда DAPI Team. Занимаемся веб-дизайном, создаём сайты и приложения: от идеи и брифа до запуска в продакшн.</p>
+        <div class="tags">
+          <span class="tag">Веб-дизайн</span>
+          <span class="tag">Разработка сайтов</span>
+          <span class="tag">Веб- и мобильные приложения</span>
+          <span class="tag">Формат: удалённо</span>
+          <span class="tag">Статус: открыты для новых проектов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="window-section" id="works">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">работы — Finder</span>
+      </div>
+      <div class="window-body">
+        <div class="filters">
+          <button class="filter active" data-filter="all">Все проекты</button>
+          <button class="filter" data-filter="sites">Сайты</button>
+          <button class="filter" data-filter="apps">Приложения</button>
+          <button class="filter" data-filter="soon">Скоро</button>
+        </div>
+        <div class="works-grid">
+          <div class="work-card" data-category="sites">
+            <div class="work-num">01</div>
+            <h3>Проект в разработке</h3>
+            <p>Кейс появится здесь после релиза</p>
+            <span class="soon-badge">скоро</span>
+          </div>
+          <div class="work-card" data-category="sites">
+            <div class="work-num">02</div>
+            <h3>Проект в разработке</h3>
+            <p>Кейс появится здесь после релиза</p>
+            <span class="soon-badge">скоро</span>
+          </div>
+          <div class="work-card" data-category="apps">
+            <div class="work-num">03</div>
+            <h3>Проект в разработке</h3>
+            <p>Кейс появится здесь после релиза</p>
+            <span class="soon-badge">скоро</span>
+          </div>
+          <div class="work-card" data-category="apps">
+            <div class="work-num">04</div>
+            <h3>Проект в разработке</h3>
+            <p>Кейс появится здесь после релиза</p>
+            <span class="soon-badge">скоро</span>
+          </div>
+          <div class="work-card" data-category="soon">
+            <div class="work-num">05</div>
+            <h3>Новый проект</h3>
+            <p>Место для вашей задачи</p>
+            <span class="soon-badge">открыты для заявок</span>
+          </div>
+          <div class="work-card" data-category="soon">
+            <div class="work-num">06</div>
+            <h3>Новый проект</h3>
+            <p>Место для вашей задачи</p>
+            <span class="soon-badge">открыты для заявок</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="window-section" id="notes">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">заметки</span>
+      </div>
+      <div class="window-body">
+        <div class="notes-grid">
+          <div class="note">Деплой по пятницам — не лучшая идея. Мы всё равно так делаем.</div>
+          <div class="note">AI — наш со-фаундер. Почти.</div>
+          <div class="note">P.I.T. (Product Intelligence Technology): прогресс 42%. Строим что-то классное. Или хотя бы пытаемся.</div>
+          <div class="note">Vibes &gt; deadlines. Но дедлайны мы всё же соблюдаем.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="window-section" id="process">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">процесс и цены</span>
+      </div>
+      <div class="window-body">
+        <h2>Как мы работаем</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3>Брифинг</h3>
+            <p>Обсуждаем задачу, аудиторию и цели проекта.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3>Структура</h3>
+            <p>Собираем структуру сайта и пользовательские сценарии.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3>Концепция</h3>
+            <p>Показываем визуальную концепцию и дизайн ключевых экранов.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <h3>Разработка</h3>
+            <p>Вёрстка, интеграции и тестирование на всех устройствах.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">05</div>
+            <h3>Запуск</h3>
+            <p>Публикуем, подключаем аналитику и передаём проект вам.</p>
+          </div>
+        </div>
+
+        <h2>Ориентировочная стоимость</h2>
+        <table class="pricing-table">
+          <thead>
+            <tr><th>Формат</th><th>Срок</th><th>Стоимость</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Лендинг</td><td>от 5 дней</td><td>от 30 000 ₽</td></tr>
+            <tr><td>Сайт-визитка</td><td>от 7 дней</td><td>от 50 000 ₽</td></tr>
+            <tr><td>Многостраничный сайт</td><td>от 14 дней</td><td>от 90 000 ₽</td></tr>
+            <tr><td>Веб- / мобильное приложение</td><td>от 30 дней</td><td>от 150 000 ₽</td></tr>
+          </tbody>
+        </table>
+        <p class="pricing-note">Цены ориентировочные, шаблонные — финальная стоимость зависит от задачи. Точный расчёт — после брифинга.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="window-section" id="contacts">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="window-title">контакты</span>
+      </div>
+      <div class="window-body">
+        <h2>Контакты</h2>
+        <div class="contacts-list">
+          <a href="https://t.me/dapiteam" target="_blank" rel="noopener">Telegram: @dapiteam</a>
+          <a href="https://instagram.com/dapi.team" target="_blank" rel="noopener">Instagram: @dapi.team</a>
+          <a href="mailto:hello@dapiteam.ru">Email: hello@dapiteam.ru</a>
+        </div>
+        <p class="pricing-note">Контакты шаблонные — замените на реальные, когда будут готовы.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 DAPI Team</span>
+  <a href="#">Политика конфиденциальности</a>
+  <a href="#">Условия использования</a>
+</footer>
+
+<div class="context-menu" id="contextMenu">
+  <button data-action="reload">Обновить рабочий стол</button>
+  <button data-action="team">Команда</button>
+  <hr>
+  <button data-action="about-os">О системе DAPI OS</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
