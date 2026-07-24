@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>DAPI Team — рабочий стол</title>
+<meta name="description" content="DAPI Team — веб-дизайн, сайты и приложения. Интерактивный рабочий стол команды.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="screen-frame">
+  <div class="desktop" id="desktop">
+
+    <header class="menubar">
+      <div class="menubar-left">
+        <span class="status-dot"></span>
+        <span>DAPI.TEAM</span>
+      </div>
+      <nav class="menubar-nav">
+        <button data-open="works">Работы</button>
+        <button data-open="team">Команда</button>
+        <button data-open="process">Процесс и цены</button>
+        <button data-open="contacts">Контакты</button>
+      </nav>
+      <div class="menubar-right">
+        <span class="online"><span class="status-dot"></span>открыты для новых задач</span>
+        <span id="clock">00:00</span>
+      </div>
+    </header>
+
+    <div class="floating top-links">
+      <a href="#" class="pill">Privacy Policy</a>
+      <a href="#" class="pill">Terms of Service</a>
+    </div>
+
+    <div class="floating notice-card" id="noticeCard">
+      <div class="notice-icon">◆</div>
+      <div class="notice-text">
+        <b>Система</b>
+        DAPI Team загружена. Открыты для новых проектов.
+      </div>
+      <button class="notice-close" id="noticeClose">×</button>
+    </div>
+
+    <div class="floating nametag">
+      <h1><span class="live-dot"></span>DAPI TEAM</h1>
+      <p>ВЕБ-ДИЗАЙН, САЙТЫ И ПРИЛОЖЕНИЯ</p>
+    </div>
+
+    <div class="floating hint-text">
+      ПРАВЫЙ КЛИК — ДОПОЛНИТЕЛЬНОЕ МЕНЮ<br>
+      ДВОЙНОЙ КЛИК НЕ ТРЕБУЕТСЯ
+    </div>
+
+    <div class="folders" id="folders">
+      <button class="folder" data-id="about" data-open="about" style="left: 34%; top: 52%;">
+        <span class="folder-icon">
+          <svg viewBox="0 0 24 20"><path fill="#5eb3f0" d="M2 3a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3Z"/><path fill="#8fd0ff" d="M2 6h20v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+        </span>
+        <span class="folder-label">О НАС</span>
+      </button>
+
+      <button class="folder" data-id="works" data-open="works" style="left: 42%; top: 52%;">
+        <span class="folder-icon">
+          <svg viewBox="0 0 24 20"><path fill="#5eb3f0" d="M2 3a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3Z"/><path fill="#8fd0ff" d="M2 6h20v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+          <span class="folder-badge">6</span>
+        </span>
+        <span class="folder-label">РАБОТЫ</span>
+      </button>
+
+      <button class="folder" data-id="team" data-open="team" style="left: 50%; top: 52%;">
+        <span class="folder-icon">
+          <svg viewBox="0 0 24 20"><path fill="#5eb3f0" d="M2 3a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3Z"/><path fill="#8fd0ff" d="M2 6h20v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+          <span class="folder-badge">4</span>
+        </span>
+        <span class="folder-label">КОМАНДА</span>
+      </button>
+
+      <button class="folder" data-id="process" data-open="process" style="left: 58%; top: 52%;">
+        <span class="folder-icon">
+          <svg viewBox="0 0 24 20"><path fill="#5eb3f0" d="M2 3a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3Z"/><path fill="#8fd0ff" d="M2 6h20v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+        </span>
+        <span class="folder-label">ПРОЦЕСС И ЦЕНЫ</span>
+      </button>
+
+      <button class="folder" data-id="contacts" data-open="contacts" style="left: 66%; top: 52%;">
+        <span class="folder-icon">
+          <svg viewBox="0 0 24 20"><path fill="#5eb3f0" d="M2 3a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3Z"/><path fill="#8fd0ff" d="M2 6h20v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+        </span>
+        <span class="folder-label">КОНТАКТЫ</span>
+      </button>
+    </div>
+
+    <div class="dock">
+      <a class="dock-icon" style="background:#2aabee;" href="https://t.me/dapiteam" target="_blank" rel="noopener" title="Telegram">✈</a>
+      <a class="dock-icon" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);" href="https://instagram.com/dapi.team" target="_blank" rel="noopener" title="Instagram">◎</a>
+      <span class="dock-sep"></span>
+      <button class="dock-icon" style="background:#f4d35e;" data-open="notes" title="Заметки">🗒</button>
+      <button class="dock-icon" style="background:#ff5f96;" data-open="music" title="Музыка">♪</button>
+      <button class="dock-icon" style="background:#e9e9ee;" data-open="safari" title="Safari">🧭</button>
+      <span class="dock-sep"></span>
+      <button class="dock-icon" style="background:#c9c9d1;" data-open="trash" title="Корзина">🗑</button>
+    </div>
+
+    <!-- ===== Modals ===== -->
+
+    <div class="modal-layer" id="modalLayer">
+
+      <!-- О нас -->
+      <div class="app-window" data-window="about" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">о нас.txt</span>
+        </div>
+        <div class="win-body">
+          <h2>О нас</h2>
+          <p class="lead">Мы — команда DAPI Team. Занимаемся веб-дизайном, создаём сайты и приложения: от идеи и брифа до запуска в продакшн.</p>
+          <div class="tags">
+            <span class="tag">Веб-дизайн</span>
+            <span class="tag">Разработка сайтов</span>
+            <span class="tag">Веб- и мобильные приложения</span>
+            <span class="tag">Формат: удалённо</span>
+            <span class="tag">Статус: открыты для новых проектов</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Работы (Finder) -->
+      <div class="app-window wide" data-window="works" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">работы — Finder</span>
+        </div>
+        <div class="win-body split">
+          <div class="win-sidebar">
+            <div class="group-label">ИЗБРАННОЕ</div>
+            <button class="active" data-filter="all">Все проекты</button>
+            <button data-filter="sites">Сайты</button>
+            <button data-filter="apps">Приложения</button>
+            <button data-filter="soon">Скоро</button>
+            <div class="group-label">СИСТЕМА</div>
+            <button data-open="about">О нас</button>
+            <button data-open="team">Команда</button>
+            <button data-open="process">Процесс и цены</button>
+            <button data-open="contacts">Контакты</button>
+          </div>
+          <div class="win-main">
+            <h2>Мои работы</h2>
+            <div class="count">6 объектов</div>
+            <div class="works-grid" id="worksGrid">
+              <div class="work-card" data-category="sites"><div class="num">01</div><h3>Проект в разработке</h3><p>Кейс появится здесь после релиза</p><span class="soon-badge">скоро</span></div>
+              <div class="work-card" data-category="sites"><div class="num">02</div><h3>Проект в разработке</h3><p>Кейс появится здесь после релиза</p><span class="soon-badge">скоро</span></div>
+              <div class="work-card" data-category="apps"><div class="num">03</div><h3>Проект в разработке</h3><p>Кейс появится здесь после релиза</p><span class="soon-badge">скоро</span></div>
+              <div class="work-card" data-category="apps"><div class="num">04</div><h3>Проект в разработке</h3><p>Кейс появится здесь после релиза</p><span class="soon-badge">скоро</span></div>
+              <div class="work-card" data-category="soon"><div class="num">05</div><h3>Новый проект</h3><p>Место для вашей задачи</p><span class="soon-badge">открыты для заявок</span></div>
+              <div class="work-card" data-category="soon"><div class="num">06</div><h3>Новый проект</h3><p>Место для вашей задачи</p><span class="soon-badge">открыты для заявок</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Команда -->
+      <div class="app-window wide" data-window="team" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">команда — Finder</span>
+        </div>
+        <div class="win-body">
+          <h2>Команда</h2>
+          <p class="lead">Четыре человека, один рабочий стол. Deploy по пятницам, кофе без остановки и AI в качестве со-фаундера.</p>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar" style="background:var(--yellow);">Д</div>
+              <h3>Дима</h3>
+              <div class="team-role">Дизайн</div>
+              <p class="team-quote">«pixels &gt; people»</p>
+              <p class="team-bio">Отвечает за то, чтобы сайт не выглядел как очередной шаблон. Рисует интерфейсы раньше, чем открывает Figma — и да, там обязательно будет котик.</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:var(--green);">И</div>
+              <h3>Илья</h3>
+              <div class="team-role">Деплой</div>
+              <p class="team-quote">«deploy &amp; pray»</p>
+              <p class="team-bio">Нажимает кнопку «Деплой» по пятницам, несмотря на надпись «DON'T DO IT», мигающую красным. Пока ни разу серьёзно не подвёл — почти.</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:var(--pink);">П</div>
+              <h3>Платон</h3>
+              <div class="team-role">Bug Slayer</div>
+              <p class="team-quote">«bug fixed! (probably)»</p>
+              <p class="team-bio">Официальный охотник на баги команды. После каждого коммита кричит «Пофиксил!», а через минуту тихо добавляет «наверное».</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:var(--blue);">А</div>
+              <h3>Арсений</h3>
+              <div class="team-role">AI Whisperer</div>
+              <p class="team-quote">«код сгенерирован или наколдован?»</p>
+              <p class="team-bio">Разговаривает с нейросетями на «ты». Пишет книгу «Prompt Engineering для чайников» — обещает закончить после дедлайна.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Процесс и цены -->
+      <div class="app-window wide" data-window="process" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">процесс и цены</span>
+        </div>
+        <div class="win-body">
+          <h2>Как мы работаем</h2>
+          <div class="steps">
+            <div class="step"><div class="step-num">01</div><h3>Брифинг</h3><p>Обсуждаем задачу, аудиторию и цели проекта.</p></div>
+            <div class="step"><div class="step-num">02</div><h3>Структура</h3><p>Собираем структуру сайта и пользовательские сценарии.</p></div>
+            <div class="step"><div class="step-num">03</div><h3>Концепция</h3><p>Показываем визуальную концепцию ключевых экранов.</p></div>
+            <div class="step"><div class="step-num">04</div><h3>Разработка</h3><p>Вёрстка, интеграции и тестирование на всех устройствах.</p></div>
+            <div class="step"><div class="step-num">05</div><h3>Запуск</h3><p>Публикуем, подключаем аналитику и передаём проект вам.</p></div>
+          </div>
+          <h2>Ориентировочная стоимость</h2>
+          <table class="pricing-table">
+            <thead><tr><th>Формат</th><th>Срок</th><th>Стоимость</th></tr></thead>
+            <tbody>
+              <tr><td>Лендинг</td><td>от 5 дней</td><td>от 30 000 ₽</td></tr>
+              <tr><td>Сайт-визитка</td><td>от 7 дней</td><td>от 50 000 ₽</td></tr>
+              <tr><td>Многостраничный сайт</td><td>от 14 дней</td><td>от 90 000 ₽</td></tr>
+              <tr><td>Веб- / мобильное приложение</td><td>от 30 дней</td><td>от 150 000 ₽</td></tr>
+            </tbody>
+          </table>
+          <p class="note-small">Цены ориентировочные, шаблонные — финальная стоимость зависит от задачи.</p>
+        </div>
+      </div>
+
+      <!-- Контакты -->
+      <div class="app-window" data-window="contacts" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">контакты</span>
+        </div>
+        <div class="win-body">
+          <h2>Контакты</h2>
+          <div class="contacts-list">
+            <a href="https://t.me/dapiteam" target="_blank" rel="noopener">Telegram: @dapiteam</a>
+            <a href="https://instagram.com/dapi.team" target="_blank" rel="noopener">Instagram: @dapi.team</a>
+            <a href="mailto:hello@dapiteam.ru">Email: hello@dapiteam.ru</a>
+          </div>
+          <p class="note-small">Контакты шаблонные — замените на реальные, когда будут готовы.</p>
+        </div>
+      </div>
+
+      <!-- Заметки -->
+      <div class="app-window" data-window="notes" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">заметки</span>
+        </div>
+        <div class="win-body">
+          <div class="sticky-notes">
+            <div class="sticky">Деплой по пятницам — не лучшая идея. Мы всё равно так делаем.</div>
+            <div class="sticky">AI — наш со-фаундер. Почти.</div>
+            <div class="sticky">P.I.T. (Product Intelligence Technology): прогресс 42%.</div>
+            <div class="sticky">Vibes &gt; deadlines. Но дедлайны мы всё же соблюдаем.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safari — кейс -->
+      <div class="app-window" data-window="safari" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">Safari</span>
+        </div>
+        <div class="win-body">
+          <div class="safari-frame">
+            <div class="safari-bar">🔒 pit.dapiteam.ru</div>
+            <div class="safari-body">
+              <h2 style="margin-top:0;">P.I.T. — Product Intelligence Technology</h2>
+              <p class="lead" style="margin-bottom:6px;">Внутренний проект команды. UI на карандаше, деплой на вере.</p>
+              <div class="safari-progress"><div class="safari-progress-fill"></div></div>
+              <p class="note-small" style="margin-top:2px;">Прогресс: 42%. Строим что-то классное. Или хотя бы пытаемся.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Музыка -->
+      <div class="app-window" data-window="music" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">музыка — сейчас играет</span>
+        </div>
+        <div class="win-body">
+          <h2 style="margin-top:0;">Плейлист для дедлайнов</h2>
+          <ul class="playlist">
+            <li>Deploy &amp; Pray <span class="dur">3:14</span></li>
+            <li>404 Coffee Not Found <span class="dur">2:47</span></li>
+            <li>Select * From Vibes <span class="dur">4:02</span></li>
+            <li>Bug Fixed (Probably) <span class="dur">3:33</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Корзина -->
+      <div class="app-window" data-window="trash" hidden>
+        <div class="win-titlebar">
+          <button class="win-dot red" data-close></button><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">корзина</span>
+        </div>
+        <div class="win-body">
+          <h2 style="margin-top:0;">Удалённые идеи</h2>
+          <ul class="trash-list">
+            <li>Сайт на Flash</li>
+            <li>Деплоить прямо в понедельник утром</li>
+            <li>Тестировать сразу в проде</li>
+            <li>Пароль «123456» для админки</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="context-menu" id="contextMenu">
+  <button data-action="open-works">Открыть работы <span class="kbd">↗</span></button>
+  <button data-action="contact">Написать нам <span class="kbd">⌘K</span></button>
+  <hr>
+  <button data-action="vibe">Проверить вайб <span class="kbd">↻</span></button>
+  <button data-action="reload">Обновить дедлайн <span class="kbd">⌘R</span></button>
+  <hr>
+  <button data-action="delete-bugs">Удалить баги… <span class="kbd">⌫</span></button>
+  <hr>
+  <button data-action="lights">Сменить освещение</button>
+  <button data-action="shuffle">Перемешать папки <span class="kbd">↻</span></button>
+  <button data-action="restore">Восстановить папки <span class="kbd">↺</span></button>
+  <button data-action="devmode">Developer mode <span class="kbd">&lt;/&gt;</span></button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
