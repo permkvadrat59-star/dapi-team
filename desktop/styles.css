@@ -383,9 +383,9 @@ button { font-family: inherit; }
 }
 .team-card { background: #1c1c22; border: 1px solid #2a2a31; border-radius: 12px; padding: 18px; }
 .team-avatar {
-  width: 40px; height: 40px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; color: #14141a; margin-bottom: 10px;
+  width: 56px; height: 56px; border-radius: 50%;
+  object-fit: cover; display: block;
+  border: 2px solid var(--accent, #2a2a31); margin-bottom: 10px;
 }
 .team-card h3 { margin: 0 0 2px; font-size: 1.02rem; }
 .team-role { font-family: var(--mono); font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
