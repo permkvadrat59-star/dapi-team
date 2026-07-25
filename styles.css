@@ -373,24 +373,25 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Team page ---------- */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   gap: 1rem;
 }
 .team-card {
   background: var(--panel-2);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.4rem;
+  border-radius: 14px;
+  padding: 0;
+  overflow: hidden;
 }
 .avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
   display: block;
-  border: 2px solid var(--accent, var(--border));
-  margin-bottom: 0.9rem;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: 3px solid var(--accent, var(--border));
+  margin: 0;
 }
+.team-card-body { padding: 1.2rem 1.4rem 1.5rem; }
 .team-card h3 { margin: 0 0 0.15rem; font-size: 1.15rem; }
 .team-role { font-family: var(--mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 0.6rem; }
 .team-quote {

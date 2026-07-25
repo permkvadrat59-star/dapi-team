@@ -304,6 +304,8 @@ button { font-family: inherit; }
 .win-title { margin-left: 4px; }
 
 .win-body {
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   padding: 26px 28px;
   color: #eaeaef;
@@ -341,7 +343,7 @@ button { font-family: inherit; }
 .win-sidebar button:hover { background: #232329; color: #fff; }
 .win-sidebar button.active { background: #2a2a31; color: #fff; }
 
-.win-main { flex: 1; padding: 22px 26px; overflow-y: auto; }
+.win-main { flex: 1; min-height: 0; padding: 22px 26px; overflow-y: auto; }
 .win-main h2 { margin: 0 0 4px; font-size: 1.3rem; }
 .win-main .count { color: rgba(255,255,255,0.4); font-family: var(--mono); font-size: 0.75rem; }
 
@@ -377,16 +379,18 @@ button { font-family: inherit; }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
   gap: 12px;
   margin-top: 8px;
 }
-.team-card { background: #1c1c22; border: 1px solid #2a2a31; border-radius: 12px; padding: 18px; }
+.team-card { background: #1c1c22; border: 1px solid #2a2a31; border-radius: 14px; padding: 0; overflow: hidden; }
 .team-avatar {
-  width: 56px; height: 56px; border-radius: 50%;
-  object-fit: cover; display: block;
-  border: 2px solid var(--accent, #2a2a31); margin-bottom: 10px;
+  display: block; width: 100%; aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: 3px solid var(--accent, #2a2a31);
+  margin: 0;
 }
+.team-card-body { padding: 14px 16px 18px; }
 .team-card h3 { margin: 0 0 2px; font-size: 1.02rem; }
 .team-role { font-family: var(--mono); font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
 .team-quote { font-size: 0.78rem; font-style: italic; color: rgba(255,255,255,0.5); border-left: 2px solid #2a2a31; padding-left: 8px; margin: 0 0 8px; }
